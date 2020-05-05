@@ -83,12 +83,13 @@ nav {
   border-bottom: solid #202a0b;
 }
 
-.page-heading {
+h1.page-heading {
   font-size: 50px;
   font-family: "josefin sans";
   margin: 6vh 0vh 5vh 2vh;
   border-bottom: solid #b8bdb4 2px;
   width: 40%;
+  color: #33360d;
 }
 
 .about-body {
@@ -253,11 +254,11 @@ nav {
     right: 20px;
   }
   .page-heading {
-    width: 60%;
+    width: 75% !important;
     margin-left: 2vw;
     margin-bottom: 3vh;
     margin-top: 3vh;
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
   }
   .about-body {
     font-size: 1.1rem;
