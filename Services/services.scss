@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfcf6;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 1 0 auto;
+  margin-left: 3vw;
+  // border: red solid;
+  min-height: 100vh;
+  margin-bottom: 8vh;
+  width: 100%;
+}
+
+.footer {
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+  width: 100%;
+  // border: green solid;
+  max-height: 300px;
+}
+
+nav {
+  height: 8vh;
+  //   border: solid;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: auto;
+}
+
+.nav-links {
+  margin: auto;
+  width: 50%;
+  min-width: 500px;
+  //   border: solid;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links .nav-item {
+  list-style: none;
+  font-family: "josefin sans";
+  color: #202a0b;
+  font-size: 18px;
+}
+
+.nav-links .nav-item a {
+  text-decoration: none;
+  color: #33360d;
+}
+
+.nav-links .nav-item.current {
+  // border-bottom: solid #202a0b;
+}
+
+h1.page-heading {
+  font-size: 50px;
+  font-family: "josefin sans";
+  margin: 6vh 0vh 5vh 6vh;
+  border-bottom: solid rgb(184, 189, 180) 2px;
+  width: 40%;
+  color: #33360d;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #f3f2e9;
+  position: relative;
+  bottom: 0px;
+  font-family: "josefin sans";
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.links-wrapper {
+  width: 90%;
+  height: 100%;
+  //   border: solid;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 8vh;
+  //   top: 50%;
+  //   transform: translateY(-25%);
+}
+
+.footer-list-title {
+  font-size: 20px;
+  padding-bottom: 6px;
+  font-weight: normal;
+}
+
+.footer-list-item {
+  font-size: 16px;
+  opacity: 0.8;
+  font-family: "josefin sans";
+  font-weight: lighter;
+}
+
+.footnote {
+  right: 10px;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.footnote span {
+  margin-right: 10px;
+}
+
+.weddings,
+.parties,
+.funerals {
+  margin-top: 200px;
+  //   background-color: coral;
+  margin-left: 3vw;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.funerals {
+  margin-top: 0;
+}
+
+.parties .text-container {
+  margin-left: 100px;
+}
+
+.text-container {
+  width: 100%;
+  // border: solid;
+  flex: 1;
+  margin-right: 20px;
+}
+
+section {
+  // border: solid red;
+}
+
+.section-title {
+  font-family: "josefin sans";
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #33360d;
+  margin-bottom: 15px;
+}
+
+.section-body {
+  font-family: "poiret one";
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.section-button {
+  background-color: #33360d;
+  text-decoration: none;
+  color: #f3f2e9;
+  font-family: "julius sans one";
+  padding: 0.8rem;
+}
+
+img {
+  // opacity: 0.4;
+  transition: 1s ease-out;
+  // transform: translateY(300px);
+  box-shadow: 18px 18px 0px rgb(240, 225, 197);
+}
+
+.wedding-images .bride {
+  position: relative;
+  margin-right: 80px;
+  top: 100px;
+}
+
+.cake {
+  position: relative;
+  transition: 1s ease-out;
+  opacity: 1;
+  top: 200px;
+}
+
+.party-images img {
+  position: relative;
+  top: 100px;
+  // border: solid;
+}
+
+.party-images .party-1 {
+  margin-right: 4vw;
+  top: -0px;
+}
+
+.funeral-images img {
+  position: relative;
+  top: 100px;
+  margin-right: 10vw;
+  max-width: 40vw;
+  opacity: 1;
+}
+
+.funerals .text-container {
+  max-width: 40%;
+}
+
+section img {
+  max-width: 25vw;
+}
+
+section {
+  // border: dotted blue;
+}
+
+.wedding-images img {
+  opacity: 0;
+}
+
+.wedding-images {
+  // border: solid red;
+}
+
+.text-container {
+  // border: green solid;
+}
+
+@media all and (max-width: 1024px) {
+  .page-heading {
+    margin-left: 3vw !important;
+    min-width: 300px !important;
+  }
+  .weddings,
+  .parties,
+  .funerals {
+    margin-top: 10vh;
+    flex-direction: column;
+  }
+
+  .parties {
+    flex-direction: column-reverse;
+  }
+
+  .wedding-images,
+  .party-images,
+  .funeral-images {
+    max-width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .weddings .wedding-images > img {
+    max-width: 40vw;
+    opacity: 1;
+    top: 0;
+    // transform: scale(1.2);
+    margin: 0;
+    box-shadow: 10px 10px 0px #f0e1c5 !important;
+  }
+
+  .parties .party-images > img {
+    max-width: 40vw;
+    opacity: 1;
+    top: 0;
+    // transform: scale(1.2);
+    margin: 0;
+    box-shadow: 10px 10px 0px #f0e1c5 !important;
+  }
+  .funerals .funeral-images > img {
+    max-width: 40vw;
+    opacity: 1;
+    top: 0;
+    // transform: scale(1.2);
+    margin: 0;
+    box-shadow: 10px 10px 0px #f0e1c5 !important;
+  }
+
+  .parties .text-container {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .funerals .text-container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .funerals .funeral-images > img {
+    max-width: 100%;
+    margin-right: auto;
+  }
+}
+
+.hamburger-parent {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media all and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  .page-heading {
+    position: relative;
+    top: -3vh;
+    width: 70%;
+  }
+
+  .hamburger-parent {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+    top: 5vh;
+    right: 20px;
+  }
+  .footer {
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 330px;
+    // min-height: 500px;
+  }
+
+  footer .links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // border: solid;
+  }
+
+  footer .links-wrapper .footer-list {
+    width: 50%;
+    flex-shrink: 0;
+    // border: solid green;
+    padding-bottom: 20px;
+  }
+
+  .footnote {
+    font-size: 12px;
+  }
+}

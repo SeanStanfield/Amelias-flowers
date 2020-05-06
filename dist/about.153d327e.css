@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fafaf7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-left: 3vw;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  margin-bottom: 8vh;
+}
+
+.footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  max-width: 100%;
+  width: 100%;
+  max-height: 220px;
+}
+
+nav {
+  height: 8vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: auto;
+}
+
+.nav-links {
+  margin: auto;
+  width: 50%;
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links .nav-item {
+  list-style: none;
+  font-family: "josefin sans";
+  color: #202a0b;
+  font-size: 18px;
+}
+
+.nav-links .nav-item a {
+  text-decoration: none;
+  color: #33360d;
+}
+
+.nav-links .nav-item.current {
+  border-bottom: solid #202a0b;
+}
+
+h1.page-heading {
+  font-size: 50px;
+  font-family: "josefin sans";
+  margin: 6vh 0vh 5vh 2vh;
+  border-bottom: solid #b8bdb4 2px;
+  width: 40%;
+  color: #33360d;
+}
+
+.about-body {
+  font-family: "poiret one";
+  width: 40vw;
+  min-width: 320px;
+  margin: 0vh 0vh 6vh 2vh;
+  font-size: 2.2vmin;
+}
+
+.about-CTA {
+  margin-left: 2vh;
+  text-decoration: none;
+  color: white;
+  background-color: #354413;
+  font-family: "julius sans one";
+  padding: 0.7rem 0.8rem;
+  max-width: 140px;
+}
+
+.alignment {
+  position: relative;
+  margin-top: 3vh;
+}
+
+.orange-bloom {
+  position: absolute;
+  top: 0vmax;
+  right: 10vw;
+  width: 40vw;
+  -webkit-box-shadow: 20px 20px 0px #e0ddc7;
+          box-shadow: 20px 20px 0px #e0ddc7;
+  opacity: 0.95;
+  max-height: 100%;
+  max-width: 38vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.quote-container {
+  margin-left: 2vh;
+  margin-top: 0vw;
+  max-width: 40vw;
+  max-height: 320px;
+  position: relative;
+}
+
+.quote {
+  color: #33440f;
+  font-size: 90px;
+  font-family: "palanquin";
+  height: 20px;
+  display: inline-block;
+}
+
+@media all and (max-width: 1200px) {
+  .quote-container {
+    margin-top: 2vw;
+    max-width: 90vw;
+  }
+  .page-heading {
+    margin-top: 4vh !important;
+  }
+}
+
+.opening {
+  position: relative;
+  top: 25px;
+  left: -20px;
+  text-shadow: -5px 2px 0px #dbd7af;
+}
+
+.closing {
+  position: absolute;
+  bottom: 40px;
+  margin-left: 20px;
+  text-shadow: 4px 2px 0px #dbd7af;
+}
+
+.nametag {
+  font-family: "josefin sans";
+  font-weight: 300;
+  font-style: italic;
+  color: #8a4d03;
+  font-size: 1.2rem;
+}
+
+.quote-text {
+  font-family: "poiret one";
+  font-size: 1.3rem;
+}
+
+.footer {
+  width: 100%;
+  height: 25vh;
+  background-color: #f3f2e9;
+  position: relative;
+  bottom: 0px;
+  font-family: "josefin sans";
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.links-wrapper {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  padding-top: 5%;
+}
+
+.footer-list-title {
+  font-size: 20px;
+  padding-bottom: 6px;
+  font-weight: normal;
+}
+
+.footer-list-item {
+  font-size: 16px;
+  opacity: 0.8;
+  font-family: "josefin sans";
+  font-weight: lighter;
+}
+
+.footnote {
+  right: 10px;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.footnote span {
+  margin-right: 10px;
+}
+
+.hamburger-parent {
+  opacity: 0;
+  pointer-events: none;
+  position: relative;
+  top: 5vh !important;
+  right: 25px !important;
+}
+
+
+/*# sourceMappingURL=/about.153d327e.css.map */

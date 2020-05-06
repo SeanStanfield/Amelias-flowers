@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url(/contactbg.dfbda24f.jpg);
+  background-color: rgba(229, 233, 208, 0.37);
+  background-blend-mode: lighten;
+  background-position: right right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70vh;
+}
+
+.hamburger-parent {
+  opacity: 0 default;
+  pointer-events: none default;
+}
+
+.footer {
+  height: 22vh;
+  position: relative;
+  background-color: #f5f4f0;
+  font-family: "josefin sans";
+}
+
+.footer .links-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.page-heading {
+  margin-left: 4vw !important;
+}
+
+.contact-content {
+  height: auto;
+  margin-left: 4vw;
+  font-family: "josefin sans";
+  color: #202a0b;
+  max-width: 500px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.contact-content .contact-body {
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.contact-content .email {
+  margin-bottom: 70px;
+}
+
+.contact-content .phone {
+  margin-bottom: 50px;
+}
+
+.contact-body em {
+  font-weight: normal;
+  border-bottom: 2px solid;
+  font-style: normal;
+}
+
+@media all and (max-width: 1200px) {
+  main {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    padding-bottom: 50px;
+  }
+  .contact-content {
+    max-width: 80%;
+  }
+  .contact-content .email,
+  .contact-content .phone {
+    font-size: 2rem;
+    margin-bottom: 5vh;
+  }
+  .footer {
+    bottom: 0;
+    position: relative;
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 660px) {
+  .contact-content .email,
+  .contact-content .phone {
+    font-size: 1.3rem;
+  }
+}
+
+
+/*# sourceMappingURL=/contact.de681e74.css.map */

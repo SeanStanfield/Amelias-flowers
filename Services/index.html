@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+  </head>
+  <link rel="stylesheet" href="../hamburger.css" />
+  <link rel="stylesheet" href="services.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,100&family=Julius+Sans+One&family=Poiret+One&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <!-- CDN for parallax effect -->
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+  <body>
+    <div id="dimmer"></div>
+
+    <div class="hamburger-parent">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </div>
+
+    <div class="sidebar">
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li class="list-item"><a href="../index.html"> Home</a></li>
+          <li class="list-item"><a href="../about/index.html"> About</a></li>
+          <li class="list-item current">
+            <a href="../Services/index.html"> Services</a>
+          </li>
+          <li class="list-item">
+            <a href="../Contact/index.html"> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="../index.html">Home</a></li>
+        <li class="nav-item"><a href="../about/index.html"> About</a></li>
+        <li class="nav-item current">
+          <a href="/services/index.html">Services</a>
+        </li>
+        <li class="nav-item"><a href="/Contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1 class="page-heading">Services</h1>
+
+      <section class="weddings">
+        <div class="text-container">
+          <h2 class="section-title">Weddings</h2>
+          <p class="section-body">
+            From small private arangements to more grand affairs, Our flowers
+            will help you remeber your special day forever.
+          </p>
+          <a href="#" class="section-button">Learn More</a>
+        </div>
+        <div class="wedding-images">
+          <img
+            class="parallax-img bride"
+            data-lax-preset_large="eager-600 fadeInOut"
+            src="/assets/Rectangle 39.jpg"
+            alt="bride holding flower boquet"
+            data-speed="1"
+          />
+          <img
+            class="parallax-img cake"
+            data-lax-preset_large="eager-700 fadeInOut"
+            src="/assets/cake.jpg"
+            alt="bride holding flower boquet"
+            data-speed="1.7"
+          />
+        </div>
+      </section>
+      <section class="parties">
+        <div class="party-images">
+          <img
+            class="parallax-img party-1 lax"
+            data-lax-preset_large="eager-700 fadeInOut"
+            src="/assets/party-1.jpg"
+            alt=""
+            data-speed="0.8"
+          />
+          <img
+            class="parallax-img party-2 lax"
+            data-lax-preset_large="eager-500 fadeInOut"
+            src="/assets/party-2.jpg"
+            alt=""
+            data-speed="1.1"
+          />
+        </div>
+        <div class="text-container">
+          <h2 class="section-title">Parties</h2>
+          <p class="section-body">
+            Birthdays, Bar Mitzvahs and everything inbetween. If youv’ve a
+            fancying for a flowery florish give us a call.
+          </p>
+          <a href="#" class="section-button">Learn More</a>
+        </div>
+      </section>
+      <section class="funerals">
+        <div class="text-container">
+          <h2 class="section-title">Funerals</h2>
+          <p class="section-body">
+            Private family affairs to larger wakes, We ensure the highest
+            quality flowers delivered on the day.
+          </p>
+          <a href="#" class="section-button">Learn More</a>
+        </div>
+        <div class="funeral-images">
+          <img
+            class="parallax-img funeral lax"
+            data-lax-preset_large="eager-300 fadeInOut"
+            src="/assets/FuneralFlowers.jpg"
+            alt="bride holding flower boquet"
+            data-speed="0.5"
+          />
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <section class="links-wrapper">
+        <ul class="footer-list">
+          <li><h3 class="footer-list-title">Visit Us</h3></li>
+          <li class="footer-list-item">77 Nowhere Rd</li>
+          <li class="footer-list-item">IG6 9HE</li>
+        </ul>
+        <ul class="footer-list">
+          <li><h3 class="footer-list-title">Opening Hours</h3></li>
+          <li class="footer-list-item">Mon-Fri: 9am - 5pm</li>
+          <li class="footer-list-item">Sat: 10am - 4pm</li>
+          <li class="footer-list-item">Sun: Closed</li>
+        </ul>
+        <ul class="footer-list">
+          <li><h3 class="footer-list-title">Get In Touch</h3></li>
+          <li class="footer-list-item">Tel : 07353 288 147</li>
+          <li class="footer-list-item">Email us</li>
+        </ul>
+        <ul class="footer-list">
+          <li><h3 class="footer-list-title">Social Media</h3></li>
+          <li class="footer-list-item">Instagram</li>
+          <li class="footer-list-item">Twitter</li>
+        </ul>
+      </section>
+      <div class="footnote">
+        <span>&copy; Amelias Flowers 2020</span>
+        <span>Site By Sean Stanfield</span>
+      </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/parallax.js"></script>
+  </body>
+</html>

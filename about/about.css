@@ -150,6 +150,9 @@ h1.page-heading {
     margin-top: 2vw;
     max-width: 90vw;
   }
+  .page-heading {
+    margin-top: 4vh !important;
+  }
 }
 
 .opening {
@@ -238,95 +241,8 @@ h1.page-heading {
 .hamburger-parent {
   opacity: 0;
   pointer-events: none;
-}
-
-@media all and (max-width: 767px) {
-  nav {
-    display: none;
-  }
-  .hamburger-parent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    opacity: 1;
-    pointer-events: all;
-    top: 3.5vh;
-    right: 20px;
-  }
-  .page-heading {
-    width: 75% !important;
-    margin-left: 2vw;
-    margin-bottom: 3vh;
-    margin-top: 3vh;
-    font-size: 2.5rem !important;
-  }
-  .about-body {
-    font-size: 1.1rem;
-  }
-  .alignment {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about-body {
-    width: 90%;
-    margin: 2vh 2vw 2vh 2vw;
-  }
-  .about-CTA {
-    margin: 2vh auto 4vh 2vw;
-  }
-  .orange-bloom {
-    position: static;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    height: auto;
-    max-width: 110vw;
-    width: 110vw;
-    max-height: 35vh;
-    min-height: 30vw;
-    margin-left: -5vw;
-  }
-  .quote-container {
-    margin: auto;
-    margin-top: -20px;
-    padding-left: 10px;
-  }
-  .quote-container .quote-text {
-    font-size: 1.1rem;
-  }
-  .footer {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    min-height: 300px;
-  }
-  footer .links-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  footer .links-wrapper .footer-list {
-    width: 45%;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    padding-bottom: 20px;
-  }
-  .footnote {
-    font-size: 12px;
-  }
+  position: relative;
+  top: 5vh !important;
+  right: 25px !important;
 }
 /*# sourceMappingURL=about.css.map */
