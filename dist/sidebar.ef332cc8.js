@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/app.js":[function(require,module,exports) {
+})({"boiler/sidebar.js":[function(require,module,exports) {
 var hamburger = document.querySelector(".hamburger-parent");
 hamburerLines = document.querySelectorAll(".hamburger-line");
 var sidebar = document.querySelector(".sidebar");
@@ -131,25 +131,6 @@ hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("X");
   }, 240);
 });
-var firebaseConfig = {
-  apiKey: "AIzaSyDuXB-o324LrfZWbVCqgnbPnXCLEp9699Y",
-  authDomain: "coding-train-walkthrough.firebaseapp.com",
-  databaseURL: "https://coding-train-walkthrough.firebaseio.com",
-  projectId: "coding-train-walkthrough",
-  storageBucket: "coding-train-walkthrough.appspot.com",
-  messagingSenderId: "121616804778",
-  appId: "1:121616804778:web:ebbdaeedd0462b81bad9d3",
-  measurementId: "G-EJRBZTYN7B"
-};
-firebase.initializeApp(firebaseConfig);
-console.log(firebase);
-var database = firebase.database();
-var ref = database.ref("scores");
-var data = {
-  name: "Sean",
-  score: 43
-};
-ref.push(data);
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -354,5 +335,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
-//# sourceMappingURL=/app.c3f9f951.js.map
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","boiler/sidebar.js"], null)
+//# sourceMappingURL=/sidebar.ef332cc8.js.map
