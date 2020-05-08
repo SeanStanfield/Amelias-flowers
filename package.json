@@ -1,5 +1,23 @@
 {
   "devDependencies": {
     "sass": "^1.26.5"
-  }
+  },
+  "name": "amelias-flowers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanStanfield/Amelias-flowers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanStanfield/Amelias-flowers/issues"
+  },
+  "homepage": "https://github.com/SeanStanfield/Amelias-flowers#readme",
+  "description": ""
 }

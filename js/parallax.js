@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const weddingImages = document.querySelectorAll(".wedding-images img");
 window.onload = function () {
   lax.setup({
-    breakpoints: { small: 0, large: 1023 },
+    breakpoints: { small: 0, large: 1025 },
   }); // init
 
   const updateLax = () => {

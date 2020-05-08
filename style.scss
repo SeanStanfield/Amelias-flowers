@@ -116,7 +116,7 @@ main {
   pointer-events: none;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 768px) {
   .hamburger-parent {
     opacity: 1;
     pointer-events: all;

@@ -130,14 +130,11 @@ h1.page-heading {
   height: 20px;
   display: inline-block;
 }
+
 @media all and (max-width: 1200px) {
   .quote-container {
     margin-top: 2vw;
     max-width: 90vw;
-  }
-
-  .page-heading {
-    margin-top: 4vh !important;
   }
 }
 

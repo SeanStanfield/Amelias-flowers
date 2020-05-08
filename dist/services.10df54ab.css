@@ -237,9 +237,10 @@ section img {
 }
 
 @media all and (max-width: 1024px) {
-  .page-heading {
+  h1.page-title {
     margin-left: 3vw !important;
-    min-width: 300px !important;
+    width: 75%;
+    font-size: 1.5rem !important;
   }
   .weddings,
   .parties,
@@ -316,11 +317,6 @@ section img {
 @media all and (max-width: 800px) {
   nav {
     display: none;
-  }
-  .page-heading {
-    position: relative;
-    top: -3vh;
-    width: 70%;
   }
   .hamburger-parent {
     display: -webkit-box;
