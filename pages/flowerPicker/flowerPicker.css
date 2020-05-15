@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  justify-content: start;
+
+  flex-wrap: wrap;
+  align-items: space-evenly;
+  padding-left: 1rem;
+  /* border: solid; */
+  max-width: 92vw;
+}
+
+.picker-intro {
+  font-size: 22px;
+  font-family: "josefin sans";
+  max-width: 500px;
+  padding: 3rem 0rem 4rem 1rem;
+}
+
+.flowerCard {
+  background-color: white;
+  box-shadow: 7px 7px 10px rgba(82, 82, 82, 0.109);
+  width: 300px;
+  min-width: 20vw;
+  min-height: 25vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  position: relative;
+  /* border: solid; */
+}
+
+.flowerCard > * {
+  font-family: "josefin sans";
+}
+
+.flowerName {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  font-size: 26px;
+  color: rgb(71, 71, 5);
+}
+
+.flowerDesc {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  color: rgb(42, 42, 42);
+}
+
+.flowerCard img {
+  object-fit: cover;
+  object-position: top;
+  /* flex: 1; */
+  min-width: 100%;
+  max-height: 80%;
+}
+
+.color-box {
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.3rem;
+  /* border: solid 1px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-box::before {
+  content: "colours: ";
+  padding-right: 0.2rem;
+  color: rgb(66, 66, 66);
+  font-size: 14px;
+}
+
+.color-box .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* background-color: red; */
+  margin: 0.2rem;
+  border: solid 1px rgba(70, 70, 70, 0.342);
+}
+
+.filterbar {
+  margin: 0rem 0rem 4rem 1rem;
+  background-color: mistyrose;
+  border-bottom: 2px rgb(202, 202, 202) solid;
+  max-width: 90vw;
+}
+
+.searchBar {
+  width: 60vw;
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  font-size: 30px;
+  font-family: "josefin sans";
+  margin-bottom: -5px;
+  letter-spacing: 0.04em;
+}

@@ -4,8 +4,11 @@
   },
   "name": "amelias-flowers",
   "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {},
+  "main": "index.html",
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "gsap": "^3.2.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

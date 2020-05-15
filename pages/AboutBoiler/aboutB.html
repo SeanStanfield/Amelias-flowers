@@ -18,6 +18,8 @@
     />
     <link rel="stylesheet" href="../../boiler/boiler.css" />
     <link rel="stylesheet" href="aboutB.css" />
+    <link rel="stylesheet" href="../ServicesBoiler/servicesB.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
   </head>
   <body>
     <div id="dimmer"></div>
@@ -59,39 +61,41 @@
       <span class="hamburger-line"></span>
     </div>
     <div class="hyper-wrapper">
-      <div class="content">
-        <h1 class="page-title">
-          About us b
-        </h1>
+      <div class="content" data-router-wrapper>
+        <section data-router-view="about" class="about-view">
+          <h1 class="page-title">
+            About us b
+          </h1>
 
-        <div class="alignment">
-          <p class="about-body">
-            At Amelia’s, we believe that every occasion can be improved by
-            flowers. That’s why, in 2008, I set up Amelia’s flowers to help
-            bring more colour and joy to our local community. <br />
-            <br />
-            Come and visit our shop for a chat with the team to work out what we
-            can do for you or view our gallery for inspiration.
-          </p>
-
-          <a class="about-CTA" href="#">View Services</a>
-          <img
-            class="orange-bloom"
-            src="/assets/orangeBloom.png"
-            alt="orange boquet of flowers"
-          />
-
-          <blockquote class="quote-container">
-            <span class="quote opening">“</span>
-            <span class="nametag">Karen McGee</span>
-            <p class="quote-text">
-              A great selection of flowers, and helpful staff that were able to
-              help me pick out flowers for my budget, I would absolutly
-              recommend to a friend.
-              <span class="quote closing">”</span>
+          <div class="alignment">
+            <p class="about-body">
+              At Amelia’s, we believe that every occasion can be improved by
+              flowers. That’s why, in 2008, I set up Amelia’s flowers to help
+              bring more colour and joy to our local community. <br />
+              <br />
+              Come and visit our shop for a chat with the team to work out what
+              we can do for you or view our gallery for inspiration.
             </p>
-          </blockquote>
-        </div>
+
+            <a class="about-CTA" href="#">View Services</a>
+            <img
+              class="orange-bloom"
+              src="/assets/orangeBloom.png"
+              alt="orange boquet of flowers"
+            />
+
+            <blockquote class="quote-container">
+              <span class="quote opening">“</span>
+              <span class="nametag">Karen McGee</span>
+              <p class="quote-text">
+                A great selection of flowers, and helpful staff that were able
+                to help me pick out flowers for my budget, I would absolutly
+                recommend to a friend.
+                <span class="quote closing">”</span>
+              </p>
+            </blockquote>
+          </div>
+        </section>
       </div>
 
       <footer class="footer">
@@ -126,5 +130,38 @@
     </div>
 
     <script src="../../boiler/sidebar.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/transition.js"></script>
+    <script src="../../js/parallax.js"></script>
+    <script>
+      function refreshParallax() {
+        console.log("ran");
+        let images = document.querySelectorAll(".parallax-img");
+        let body = document.querySelector("body");
+        let weddingImages = document.querySelectorAll(".wedding-images img");
+
+        lax.setup({
+          breakpoints: { small: 0, large: 1025 },
+        }); // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
+
+        window.requestAnimationFrame(updateLax);
+
+        console.log(weddingImages.length);
+
+        if (weddingImages.length) {
+          setTimeout(() => {
+            weddingImages.forEach((image) => {
+              image.classList.add("lax");
+              lax.addElement(image);
+            });
+          }, 700);
+        }
+      }
+    </script>
   </body>
 </html>

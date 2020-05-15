@@ -14,12 +14,16 @@ window.onload = function () {
   window.requestAnimationFrame(updateLax);
 };
 
-window.addEventListener(
-  "DOMContentLoaded",
-  setTimeout(() => {
-    weddingImages.forEach((image) => {
-      image.classList.add("lax");
-      lax.addElement(image);
-    });
-  }, 700)
-);
+console.log(weddingImages.length);
+
+if (weddingImages.length) {
+  window.addEventListener(
+    "DOMContentLoaded",
+    setTimeout(() => {
+      weddingImages.forEach((image) => {
+        image.classList.add("lax");
+        lax.addElement(image);
+      });
+    }, 700)
+  );
+}
