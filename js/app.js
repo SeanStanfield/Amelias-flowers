@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger-parent");
-hamburerLines = document.querySelectorAll(".hamburger-line");
+const hamburerLines = document.querySelectorAll(".hamburger-line");
 const sidebar = document.querySelector(".sidebar");
 const dimmer = document.querySelector("#dimmer");
 

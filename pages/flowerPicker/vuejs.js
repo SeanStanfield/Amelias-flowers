@@ -75,10 +75,17 @@ Vue.component("flowerbox", {
      </div>`,
 });
 
-Vue.component("filter", {
+Vue.component("app-filter", {
   data: function () {
-    return;
+    return {
+      colour: function () {
+        return "<span>Colour</span>";
+      },
+      testVar: "some words",
+      colour: "red",
+    };
   },
+  template: `<div> <p>Filter tag</p></div>`,
 });
 
 new Vue({
